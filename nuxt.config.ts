@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      apiEndpoint: ''
+      apiEndpoint: process.env.NUXT_PUBLIC_API_ENDPOINT || ''
     }
   }
 })
