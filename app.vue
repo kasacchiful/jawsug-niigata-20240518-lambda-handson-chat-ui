@@ -4,7 +4,7 @@ const response = ref('');
 const ask = async () => {
   response.value = '';
   const config = useRuntimeConfig()
-  const res = await $fetch(config.public.API_ENDPOINT, {
+  const res = await $fetch(config.public.apiEndpoint, {
     method: 'POST',
     body: { message: message.value }
   });
